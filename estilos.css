@@ -1,6 +1,147 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Limelight", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 
+}
+html{
+    scroll-behavior: smooth; /*Desplazamiento suave al hacer click en un enlace */
+}
+
+body{
+    color: white; /* color de texto*/
+    background: #000; /*color del fondo*/
+}
+/*
+-------------------------------------------------------------------
+1. Navegación Fija 
+*/
+header nav{
+    top: 0;
+    width: 100%;
+    background: black;
+    padding: 15px;
+    z-index: 1000; /* Asegurar que esté por encima de otros */
+    position: fixed; /*fijar el menu en la pantalla*/
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    
+}
+header nav ul li a{
+    color: white;
+    font-size: 22px;
+    text-decoration-line: none;
+}
+header nav ul li a:hover{
+    color: #00ffcc;
+
+
+}
+/*
+----------------------------------------------------------------------------------------
+2. Sección inicio.
+*/
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000, #1a1a1a, #333333);
+
+}
+.hero-contenido{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.hero-titulo{
+    font-size: 3rem;
+    margin-bottom: 15px;
+
+}
+.hero-subtitulo{
+    color: #00ffcc; /*color*/
+    margin-bottom: 15px; /*margen hacia abjo*/
+    font-size: 1.5rem; /*tamaño de letra */
+    font-weight: 500; /* grosor de la letra */
+}
+.hero-descripcion{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+.hero-eslogan{
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+.hero-foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ffcc;
+    margin-bottom: 15px;
+}
+.hero-estadisticas{
+    display: flex;
+    justify-content: center;
+    gap: 40px; /*separar, poner un espaciado entre elementos*/
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.esta-item{
+    text-align: center; /*centrart texto*/
+}
+.esta-numero{
+    display: block;
+    font-size: 2rem;
+    font-weight: 550;
+    color: #00ffcc;
+    
+
+}
+.esta-nombre{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.hero-botones{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+}
+.btn-whatsapp, .btn-linkedin, .btn-cv{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid;
+
+}
+.btn-whatsapp{
+    border-color: #25D366;
+    color: #25D366;
+}
+.btn-linkedin{
+    border-color: #0077b5;
+    color: #0077b5;
+}
+.btn-cv{
+    border-color: chocolate;
+    color: chocolate;
 }
