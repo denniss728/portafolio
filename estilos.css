@@ -145,3 +145,76 @@ header nav ul li a:hover{
     border-color: chocolate;
     color: chocolate;
 }
+.hero-nombre{
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+.hero-nombre:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+/*-----------------------------------------------------------*/
+/*sobre mi*/
+/*sobre*/
+.sobre{
+    text-align: center;
+
+}
+.sobre p{
+    max-width: 800px;
+    line-height: 1.8;
+    margin: 0 auto 15px auto ;
+}
+
+
+.sobre h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+
+}
+/*------------------------------------------------------------------------*/
+/*Mis tecnologias*/
+.tecno{
+    background: black;
+    
+}
+.tecno h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.tecno-card{
+    padding: 25px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255, 0.09);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+}
+.tecno h3{
+    color: #00ffcc;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.tecno p{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.tecno-tecnologias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
