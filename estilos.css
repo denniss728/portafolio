@@ -196,7 +196,12 @@ header nav ul li a:hover{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    transition: 0.3s ease;
     
+}
+.tecno-card:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 .tecno h3{
     color: #00ffcc;
@@ -218,3 +223,144 @@ header nav ul li a:hover{
     max-width: 1000px;
     margin: 0 auto;
 }
+/*-----------------------------------*/
+/*Mis proyectos*/
+.proyectos{
+    text-align: center;
+}
+
+.proyectos h2{
+    margin-bottom: 25px;
+}
+
+.proyecto-card{
+    background-color: rgb(255, 255, 255, 0.09);
+    padding: 30px;
+    border-radius: 15px;
+    padding-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 4px solid green;
+    margin-bottom: 25px;
+    transition: 0.3s ease;
+}
+
+.proyecto-titulo{
+    font-size: 20px;
+    color: #00ffcc;
+    margin-bottom: 10px;
+    
+
+}
+.proyecto-descripcion{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.proyecto-card:hover{
+    background-color: #2a2a2a;
+    transform:scale(1.1)rotate(-2deg);
+    transition: 0.3s ease;
+}
+/*------------------------------------------------------------*/
+/*contactos*/
+.contacto{
+    text-align: center;
+
+}
+.contacto h2{
+    margin-bottom: 25px;
+}
+.contacto form{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto; 
+
+}
+.contacto input, textarea{
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+
+}
+.contacto button{
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #00ffcc;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+.contacto button:hover{
+    background: #029578;
+    color: white;
+    transition: 0.3s ease;
+}
+.contacto button:active{
+    transform: scale(0.98);
+}
+/*-----------------------------------------------------------------*/
+/*footer*/
+
+.footer{
+    text-align: center;
+}
+.footer h2{
+    margin: 25px 0;
+}
+.contacto-info{
+    margin-bottom: 25px;
+
+}
+.contacto-info h3{
+    color: #00ffcc;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+.contacto-sociales h3{
+    color: #00ffcc;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+.contacto-sociales nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contacto-sociales nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.copyright{
+    margin-top: 30px;
+    color: #6d6d6d;
+    font-size: 0,9rem;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

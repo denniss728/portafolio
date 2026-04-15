@@ -131,33 +131,69 @@
           </article>
         </div>
       </section>
-      <section id="proyectos">
+      <section id="proyectos" class="proyectos">
         <h2>Mis proyectos</h2>
-        <div>
-            <article>
-                <h3>Sistema de registro de actividades</h3>
-                <p>Sistema de gestión de actividades </p>
-                <p>
+        <div class="lista-proyectos">
+            <article class="proyecto-card">
+                <h3 class="proyecto-titulo">Sistema de registro de actividades</h3>
+                <p class="proyecto-descripcion">Sistema de gestión de actividades </p>
+                <p class="proyecto-tecnologias">
                     <strong>Tecnologías: </strong> Java
                 </p>
             </article>
-            <article>
-                <h3>Sistema de citas médicas </h3>
-                <p>Sistema de administración de clientes y citas médicas</p>
-                <p>
+            <article class="proyecto-card">
+                <h3 class="proyecto-titulo">Sistema de citas médicas </h3>
+                <p class="proyecto-descripcion">Sistema de administración de clientes y citas médicas</p>
+                <p class="proyecto-tecnologias">
                     <strong>Tecnologías: </strong> Java
                 </p>
             </article>
-            <article>
-                <h3>Portafolio personal</h3>
-                <p>Página web personal informativa - portafolio web </p>
-                <p>
+            <article class="proyecto-card">
+                <h3 class="proyecto-titulo">Portafolio personal</h3>
+                <p class="proyecto-descripcion">Página web personal informativa - portafolio web </p>
+                <p class="proyecto-tecnologias">
                     <strong>Tecnologías: </strong> HTML, CSS y JavaScript 
                 </p>
             </article>
         </div>
 
       </section>
+      <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form action="">
+          <input type="text" placeholder="Ingresa tu nombre" required>
+          <input type="email" placeholder="Ingresa tu correo" required>
+          <textarea rows="4" placeholder="Ingresa tu mensaje " required></textarea>
+          <button type="submit">Enviar</button>
+
+        </form>
+
+      </section>
     </main>
+    <footer class="footer">
+      <h2>
+        Informacion de contacto
+      </h2>
+      <section class="contacto-info">
+        <h3>Datos de contacto</h3>
+        <address>
+          <p>Email: bernabedennis27@gmail.com</p>
+          <p>Celular: 519259393066</p>
+          <p>Ubicación: Puno</p>
+        </address>
+      </section>
+      <section class="contacto-sociales">
+        <h3>Redes sociales</h3>
+        <nav>
+          <ul>
+            <li><a href="" target="_blank">Facebook</a></li>
+            <li><a href="https://github.com/denniss728" target="_blank">GitHub</a></li>
+            <li><a href="https:/wa.me/51925939066" target="_blank">WhatsApp</a></li>
+          </ul>
+        </nav>
+      </section>
+      <p class="copyright"> &copy., 2026 Yunior. Todo los dereechos reservados.</p>
+    </footer>
   </body>
 </html>
+<script src="script.js"></script>
