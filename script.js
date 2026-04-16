@@ -1,23 +1,22 @@
+const nombre = document.getElementById("nombre");
+const correo = document.getElementById("correo");
+const mensaje = document.getElementById("mensaje");
 
-let edad = 30;
-const esMayorEdad = true;
-const nombre = "Yunior Dennis";
-const precio = 99.99;
+//document.getElementById("formulario-contacto").addEventListener("click",function(e){
+    //console.log("Hola hicieron click en el formulario")
 
-console.log(nombre, precio, edad);
+//}) 
 
-edad += 5;
-
-console.log(edad);
-console.log("suma: ", 5 + 5);
-//&//
-if(edad >= 18 ){
-    console.log("Mayor de edad");
-}else{
-    console.log("Menor de edad");
-}
-const frutas = ["manzana", "pera", "naranja", "fresa"];
-frutas.map((fruta)=>{
-    console.log(fruta);
-
-});
+document.getElementById("formulario-contacto").addEventListener("submit",function(e){
+    e.preventDefault();
+    console.log("escucho un evento submit");
+    console.log(nombre.value);
+    console.log(correo.value);
+    console.log(mensaje.value);
+    Swal.fire({
+        title: "Registro exitoso",
+        text: "Tus datos se registraron correctamente",
+        icon: "success"
+        });
+    
+})
